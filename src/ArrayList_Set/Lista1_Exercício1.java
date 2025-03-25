@@ -10,17 +10,10 @@ public class Lista1_Exercício1 {
 		Scanner scanner = new Scanner(System.in);
 	    ArrayList<String> cores = new ArrayList<>();
 	    
-	    for(int i = 0; i < 5; i++);
-	    System.out.println("Digite a primeira cor: ");
+	    for(int i = 1; i <= 5; i++) {
+	    System.out.println("Digite a " + i + "ª cor");
 	    cores.add(scanner.nextLine());
-	    
-	    cores.add("Azul");
-	    cores.add("Verde");
-	    cores.add("Amarelo");
-	    cores.add("Vermelho");
-	    cores.add("Laranja");
-	    
-	    System.out.println(cores);
+	    } 
 	
 	    for(String cor: cores) {
 			System.out.println(cor);	
@@ -30,12 +23,12 @@ public class Lista1_Exercício1 {
 	   System.out.println("_______________________");
 		for(String cor: cores) {
 		    System.out.println(cor);
+		    
 		} 
-		System.out.println("Digite a cor: ");
-		System.out.println("A posição da cor é: " + cores.indexOf(scanner.nextLine()));
 
 }
 }
+
 
 
 

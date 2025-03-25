@@ -1,48 +1,32 @@
 package ArrayList_Set;
 
-import java.util.*;
+import java.util.HashSet;
 import java.util.Iterator;
-import java.util.Set;
+import java.util.Scanner;
+
 
 public class Lista2_Exercício3 {
 
 	public static void main(String[] args) {
 
-		
-		HashSet<Double> dados = new HashSet<Double>(); 
-		
-		dados.add(2.0); 
-		dados.add(5.0);
-		dados.add(1.0);
-		dados.add(3.0); 
-		dados.add(4.0);
-		dados.add(9.0);
-		dados.add(7.0);
-		dados.add(8.0);
-		dados.add(10.0);
-		dados.add(6.0);
-		
+		HashSet<Integer> dados = new HashSet<Integer>();
+
+		Scanner scanner = new Scanner(System.in);
+
+		for (int i = 0; i < 10; i++) {
+			System.out.println("Digite um número: ");
+
+			dados.add(scanner.nextInt());
+		}
+
 		System.out.println("\nListar os dados Set: ");
-		
-		for(Double dado: dados) {
-		System.out.println(dados);
-		 
-		System.out.println("\nListar todos os dados Iterator: ");
-		
-		Iterator<Double> iterator = dados.iterator();
-		
-		while(iterator.hasNext()){
-			   System.out.println(iterator.next());
-			   
-			}
-			}
-					
-			
+
+		Iterator<Integer> iterator = dados.iterator();
+
+		while (iterator.hasNext()) {  
+			System.out.println(iterator.next());
+
+		}
+		scanner.close();
 	}
 }
-
-
-
-
-
-
